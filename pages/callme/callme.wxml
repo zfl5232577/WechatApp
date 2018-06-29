@@ -1,0 +1,15 @@
+<view class='callme'>
+  <image class='callme_icon' src='../../image/defaultuser.png'></image>
+  <view class='callme_des'>
+  <text>如果想要拥有自己的小程序或者在使用中</text>
+  <text>遇到任何技术问题，请联系：</text>
+</view>
+<view class='call' bindtap='onCall'>
+<text>拨打电话</text>
+</view>
+<view class='callme_des'>zfl5232577@126.com</view>
+</view>
+<view class='why'>
+<text class='why_q'>-商家为什么需要小程序-</text>
+<text class='why_a'>小程序是商家移动互联网的一次机遇</text>
+</view>

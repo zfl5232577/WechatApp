@@ -1,0 +1,53 @@
+/**index.wxss**/
+
+.bt_login {
+  margin-top: 60rpx;
+  width: 280rpx;
+}
+
+.userinfo {
+  height: 280rpx;
+  width: 100%;
+  padding-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 20rpx;
+  padding: 30rpx 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.list .item .icon {
+  font-size: 32rpx;
+}
+
+.list .item text {
+  display: block;
+  flex: 1;
+  margin: 0 20rpx;
+  font-size: 32rpx;
+}
+
+.massege {
+  margin: 120rpx 30rpx;
+}
+@import "../../css/font.wxss";

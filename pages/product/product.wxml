@@ -1,0 +1,7 @@
+<!--productr.wxml-->
+<import src="../../template/card/card.wxml" />
+<view class='title'>影集</view>
+<template is="card" data="{{card}}" />
+
+<view class='title'>写真</view>
+<template is="card" data="{{card}}" />

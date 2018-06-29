@@ -1,0 +1,15 @@
+<template name="card">
+  <swiper class="card" indicator-dots="{{false}}" autoplay="{{true}}" interval="7000" duration="600" indicator-color="#ffffff" circular="{{true}}" previous-margin="100rpx" next-margin="100rpx">
+    <block wx:for="{{card}}" wx:key="*this">
+      <swiper-item>
+        <view class='card_item'>
+          <image src="{{item.img}}" class="card_image" />
+          <view class="card_text">
+            <text class='card_name'>{{item.name}}</text>
+            <text class='card_des'>{{item.des}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

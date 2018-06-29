@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="userinfo" >
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='bt_login'> 未登录 </button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+<view class="list">
+  <block wx:for="{{itemList}}" wx:key="..itemList" wx:for-item="item">
+    <navigator url="{{item.url}}" bindtap='itemOnClick' data-id="{{item.id}}">
+      <view class='item'>
+        <span class="icon {{item.img}}"></span>
+        <text>{{item.name}}</text>
+        <span class="icon icon-right"></span>
+      </view>
+    </navigator>
+  </block>
+</view>
+<button class='massege' type='warn' open-type="contact">客服留言</button>

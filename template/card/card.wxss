@@ -1,0 +1,33 @@
+/*card.wxss  */
+
+.card {
+  display: block;
+  height: 760rpx;
+}
+
+.card .card_item {
+  border-radius: 20rpx;
+  height: 96%;
+  width: 96%;
+  margin: 2%;
+  box-shadow: 5rpx 5rpx 10rpx #888;
+}
+
+.card_image {
+  height: 72%;
+  width: 100%;
+  background-color: #eee;
+  align-items: center;
+  display: flex;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.card_text {
+  background-color: #e61773;
+  height: 28%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20rpx 20rpx;
+}

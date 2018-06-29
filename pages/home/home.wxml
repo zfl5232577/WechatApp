@@ -1,0 +1,55 @@
+<!--home.wxml-->
+<import src="../../template/banner/banner.wxml"/>
+
+<template is="banner" data="{{banner}}"/>
+
+<view class="store-intro">
+  <view class="store-pic-name">
+    <view class="store-name" catchtap="toStoreDetail">
+      <text>精彩瞬间</text>
+      <text class="store-status {{storeData.store_sta < 2 ? 'green' : 'gray'}}">已保存</text>
+    </view>
+     <navigator url="../logs/logs" class="btn-more-store">
+      <text class="btn-more-store-text">更多案例 ></text>
+    </navigator> 
+  </view>
+</view>
+<!--listviw/gridview  -->
+<!-- <view class="product_list">
+  <block wx:for="{{productList}}" wx:key="*this" wx:for-item="item">
+    <view class='product_item' data-url="{{item.url}} "catchtap='itemOnClick'>
+      <image class='product_image' src="{{item.url}}"></image>
+      <view class='product_name'>这是{{item.name}}张图片</view>
+    </view>
+  </block>
+</view> -->
+<view class="content">
+      <view class="left">
+        <block wx:for="{{note}}" wx:key="">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+        </block>
+      </view>
+      <view class="right">
+        <block wx:for="{{note}}" wx:key="">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+        </block>
+      </view>
+    </view>
+<!--  下面是一个模块 -->
+<template name="item">
+  <view class="item">
+    <image class="item-img" src="{{url}}" mode="widthFix"></image>
+    <!-- <view class="item-title-box">
+      <navigator url="url" class="item-title">{{title}}</navigator> 
+       <image class="arrow" src="../../image/tabbar/order_un.png"></image>   
+    </view>
+    <view class="name">
+      <image class="item-ava" src="{{avatar}}"></image>    
+      <text class="name-title">{{name}}</text>
+      <view class="heart_">
+        <text>{{heart_num}}</text>
+      </view>
+    </view> -->
+  </view>
+
+</template>

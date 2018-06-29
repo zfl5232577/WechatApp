@@ -1,0 +1,8 @@
+/**index.wxss**/
+@import  "../../template/card/card.wxss";
+.title{
+  color: #333;
+  font-size: 60rpx;
+  margin: 60rpx; 
+  font-weight: bold;
+}

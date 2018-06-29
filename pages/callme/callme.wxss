@@ -1,0 +1,57 @@
+page {
+  background-color: #347;
+}
+
+.callme {
+  width: 94%;
+  border-radius: 20rpx 20rpx 0 0;
+  margin: 40rpx 3% 0 3%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.callme_icon {
+  margin-top: 70rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.callme_des {
+  margin: 60rpx;
+  font-size: 28rpx;
+  color: #999;
+  line-height: 50rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.call {
+  color: #fff;
+  font-size: 36rpx;
+  padding: 14rpx 70rpx;
+  background: #569e75;
+  border-radius: 33rpx;
+}
+
+.why {
+  width: 94%;
+  margin: 0 3%;
+  padding: 50rpx 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #768;
+  border-radius: 0 0 20rpx 20rpx;
+}
+.why_q{
+  font-weight: bold;
+  font-size: 50rpx;
+}
+.why_a{
+  font-size: 36rpx;
+  margin-top: 15rpx;
+}

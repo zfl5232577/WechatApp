@@ -1,0 +1,10 @@
+<!--banner.wxml  -->
+<template name="banner">
+  <swiper class="banner" indicator-dots="{{true}}" autoplay="{{true}}" interval="3000" duration="600" indicator-color="#ffffff" indicator-active-color="#e61773" circular="{{true}}" bindchange="bannerChange">
+    <block wx:for="{{banner.picList}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{banner.showArr[index] ? item : '../../template/banner/loading-super.gif'}}" class="banner-image {{!banner.showArr[index] ? 'default-banner-image' : ''}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</template>
